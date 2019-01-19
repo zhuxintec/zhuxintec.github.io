@@ -1,0 +1,282 @@
+﻿html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background: -webkit-linear-gradient(45deg, #6F6F6F, #676767);
+    background: -moz-linear-gradient(45deg,#6F6F6F, #676767);
+    background: -ms-linear-gradient(45deg, #6F6F6F 0, #676767 100%);
+    background: -o-linear-gradient(135deg, #6F6F6F, #676767);
+    background: linear-gradient(45deg, #6F6F6F, #676767);
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#canvasdiv {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.linelogo {
+    width: 186px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    right: 0;
+    margin: auto;
+}
+
+#loadline {
+    width: 256px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 96px;
+    right: 0;
+    margin: auto;
+    background: #AABBCC;
+    animation: linestretching .5s ease 4 alternate;
+    -webkit-animation: linestretching .5s ease 4 alternate;
+}
+
+@keyframes linestretching {
+    from {
+        width: 0px;
+        height: 1px;
+    }
+    to {
+        width: 256px;
+        height: 1px;
+    }
+}
+
+/*@-webkit-keyframes linestretching {*/
+    /*from {*/
+        /*width: 0px;*/
+        /*height: 1px;*/
+    /*}*/
+    /*to {*/
+        /*width: 256px;*/
+        /*height: 1px;*/
+    /*}*/
+/*}*/
+
+#loadline2 {
+    display: none;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 96px;
+    right: 0;
+    margin: auto;
+    background: #AABBCC;
+    animation: linestretching2 .5s  cubic-bezier(.645, .045, .175, 1) 1 normal ;
+    -webkit-animation: linestretching2 .5s  cubic-bezier(.645, .045, .175, 1) 1 normal ;
+}
+
+@keyframes linestretching2 {
+    from {
+        width: 0px;
+        height: 1px;
+    }
+    to {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+/*@-webkit-keyframes linestretching2 {*/
+    /*from {*/
+        /*width: 0px;*/
+        /*height: 1px;*/
+    /*}*/
+    /*to {*/
+        /*width: 100%;*/
+        /*height: 1px;*/
+    /*}*/
+/*}*/
+
+#loadline3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    margin: auto;
+    background: -webkit-linear-gradient(45deg, #445566, #334455);
+    background: -moz-linear-gradient(45deg, #445566, #334455);
+    background: -ms-linear-gradient(45deg, #445566 0, #334455 100%);
+    background: -o-linear-gradient(135deg, #445566, #334455);
+    background: linear-gradient(45deg, #445566, #334455);
+    animation: linestretching3 1s ease 1 normal ;
+    -webkit-animation: linestretching3 1s ease 1 normal ;
+}
+
+@keyframes linestretching3 {
+    from {
+        height: 1px;
+        bottom: 96px;
+    }
+    to {
+        height: 100%;
+        bottom: 0px;
+    }
+}
+
+/*@-webkit-keyframes linestretching3 {*/
+    /*from {*/
+        /*height: 1px;*/
+        /*bottom: 96px;*/
+    /*}*/
+    /*to {*/
+        /*height: 100%;*/
+        /*bottom: 0px;*/
+    /*}*/
+/*}*/
+
+
+.logodiv {
+    text-align: left;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+}
+
+#logoline {
+    width: 100%;
+    height: 1px;
+    /*top: 0;*/
+    left: 0;
+    bottom: -5px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background: #778899;
+    animation: logolinestretching 2s ease infinite alternate;
+    -webkit-animation: logolinestretching 2s ease infinite alternate;
+}
+
+@keyframes logolinestretching {
+    from {
+        width: 0px;
+        height: 1px;
+    }
+    to {
+        width: 100%;
+        height: 1px;
+    }
+}
+.logo {
+    width: 360px;
+}
+.about_arrow{
+    top: 15px;
+    right:15px;
+    width: 100px;
+    height: 8px;
+    text-align: right;
+    position: absolute;
+}
+
+.about_title{
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: -12px;
+    margin-right: 2px;
+}
+
+.legal {
+    color: #ffffff;
+    bottom: 5px;
+    right: 5px;
+    font-size: 13px;
+    position: absolute;
+}
+
+/*------Menu button----------*/
+
+.menuLine {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    z-index: 110;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    /*transition: transform 6s cubic-bezier(.755, .05, .855, .06) 0s, visibility .6s linear 0s;*/
+}
+
+.menuLine_open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.menuLine_open > span{
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.menuLine_open > span:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #fff;
+}
+
+
+.menuLine_open > span:nth-child(1) {
+    top: 3px;
+    animation: menuTrigger_hoverX 1s cubic-bezier(.6, .05, .2, 1) 0s;
+}
+
+.menuLine_open > span:nth-child(2) {
+    top: 13px;
+    animation: menuTrigger_hoverX 1s cubic-bezier(.6, .05, .2, 1) .5s;
+}
+
+.menuLine_open > span:nth-child(3) {
+    top: 23px;
+    animation: menuTrigger_hoverX 1s cubic-bezier(.6, .05, .2, 1) 1s;
+}
+
+@keyframes menuLine_hoverX {
+    0% {
+        transform-origin: 100% 0;
+        transform: none
+    }
+    45% {
+        transform-origin: 100% 0;
+        transform: scaleX(0)
+    }
+    55% {
+        transform-origin: 0 0;
+        transform: scaleX(0)
+    }
+    100% {
+        transform-origin: 0 0;
+        transform: none
+    }
+}
