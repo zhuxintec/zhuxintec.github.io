@@ -19,10 +19,12 @@ zhuxin.loadingSplash=function () {
     $("#menuLine").bind('click', function () {
         // var json=camera.toJSON();
         // var str=JSON.stringify(json);
-        alert(controls);
+        // alert(controls);
+        window.open('html/Javascript.html','_blank');
     })
     $("#about_arrow" ).bind( "click", function() {
-        alert("adsf");
+        // window.location = 'html/Javascript.html'
+        // window.open('html/Javascript.html','_blank');
     });
 
 
